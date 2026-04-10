@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#FDFF00"
+    tools:context=".TelaAdmin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="612dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/borda_layout"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="Modulo Admin!" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Codigo:" />
+
+        <Spinner
+            android:id="@+id/spPedidoAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Data:" />
+
+            <EditText
+                android:id="@+id/edtDataEvento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="date" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Local:" />
+
+            <EditText
+                android:id="@+id/edtLocalEvento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Status:" />
+
+            <EditText
+                android:id="@+id/edtStatusEvento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Detalhes:" />
+
+            <EditText
+                android:id="@+id/edtDetalhesEvento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+        <ListView
+            android:id="@+id/listAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="195dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="84dp"
+            android:layout_marginLeft="32dp"
+            android:orientation="horizontal"
+            android:padding="20dp">
+            <Button
+                android:id="@+id/btRetornarAdmin"
+                android:layout_width="131dp"
+                android:layout_height="wrap_content"
+                android:text="Retornar" />
+
+            <Button
+                android:id="@+id/btCadastrarAdmin"
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:text="Cadastrar" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

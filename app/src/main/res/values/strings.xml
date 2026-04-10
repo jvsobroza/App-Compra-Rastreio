@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TrabalhoFinal</string>
+    <array name="transportadoras">
+        <item>JSL</item>
+        <item>Correios</item>
+        <item>Braspress</item>
+        <item>Jadlog</item>
+    </array>
+    <array name="entrega">
+        <item>Normal</item>
+        <item>Expressa</item>
+    </array>
+    <array name="previsao">
+        <item>24 Horas</item>
+        <item>7 Dias</item>
+        <item>14 Dias</item>
+        <item>31 Dias</item>
+    </array>
+</resources>

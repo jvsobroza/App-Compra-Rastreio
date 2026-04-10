@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="40dp"
+    android:background="#FDFF00"
+    tools:context=".TelaCadastro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="544dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/borda_layout"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="Cadastrar pedido!" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Pedido:" />
+
+        <EditText
+            android:id="@+id/edtCodigoRastreio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Transportadora:" />
+
+        <Spinner
+            android:id="@+id/spTransportadora"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:entries="@array/transportadoras" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Método de entrega:" />
+
+        <Spinner
+            android:id="@+id/spEntrega"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:entries="@array/entrega" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Origem:" />
+
+        <EditText
+            android:id="@+id/edtOrigem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Destino:" />
+
+        <EditText
+            android:id="@+id/edtDestino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Previsão:" />
+
+        <Spinner
+            android:id="@+id/spPrevisao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/previsao" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="84dp"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <Button
+                android:id="@+id/btRetornarCadastro"
+                android:layout_width="131dp"
+                android:layout_height="wrap_content"
+                android:text="Retornar" />
+
+            <Button
+                android:id="@+id/btCadastrarCad"
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:text="Cadastrar" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
